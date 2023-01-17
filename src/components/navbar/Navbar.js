@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
+import { UserContext } from "../../context/user.context";
+import { signOutUser } from "../../utils/firebase.utils";
 
 function NavBar() {
+  const { currentUser, setCurrentUser } = useContext(UserContext);
+
+  const signOutHandler = async () => {
+    await signOutUser();
+    setCurrentUser(null);
+  };
+
   return (
     <>
       <nav className="all">
@@ -26,6 +35,17 @@ function NavBar() {
             <Link to="/search" className="navlink">
               Search
             </Link>
+          </li>
+          <li>
+            {currentUser ? (
+              <span className="navlink" onClick={signOutHandler}>
+                Sign-out
+              </span>
+            ) : (
+              <Link to="/auth" className="navlink">
+                Sign-in
+              </Link>
+            )}
           </li>
         </ul>
       </nav>
