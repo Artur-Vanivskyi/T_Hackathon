@@ -9,6 +9,7 @@ import Authentication from "./authentication/Authentication";
 import Jobs from "../components/jobs/Jobs";
 import NotFound from "./NotFound";
 import List from "../components/jobs/list/List";
+import Search from "../components/jobs/search/Search";
 
 function Routes() {
   return (
@@ -33,6 +34,9 @@ function Routes() {
       </Route>
       <Route path="/opp">
         <List />
+      </Route>
+      <Route path="/search">
+        <Search />
       </Route>
       <Route>
         <NotFound />

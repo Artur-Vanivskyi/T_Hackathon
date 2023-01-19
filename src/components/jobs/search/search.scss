@@ -1,0 +1,217 @@
+.page-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  
+  
+}
+
+.profile-container {
+  width: 520px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding-left: 10px;
+  margin-left: 30px;
+}
+
+.bio-container {
+  width: 500px;
+  height: 200px;
+  margin-top: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  background: lightgrey;
+}
+
+.left {
+    width: 150px;
+    height: 180px;
+   
+
+    .image {
+        position: absolute;
+        left: 63px;
+        top: 143px;
+        width: 80px;
+        height: 80px;
+        border: 2px solid black;
+        border-radius: 50%;
+        background: white;
+    }
+
+    .name{
+        width: 100px;
+        height: 20px;
+        border: 2px solid black;
+        position: absolute;
+        top: 235px;
+        left: 60px;
+        background: white;
+    }
+    .name-last{
+        width: 100px;
+        height: 20px;
+        border: 2px solid black;
+        position: absolute;
+        top: 265px;
+        left: 60px;
+        background: white;
+    }
+}
+
+.right {
+    width: 340px;
+    height: 150px;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background: white;
+
+    .bio-text{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 10px 0px 0px 10px;
+        inline-size: 320px; 
+        overflow-wrap: break-word;
+
+    }
+}
+
+
+
+.keywords-container {
+  width: 500px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background: lightgrey;
+
+  .key-text {
+    margin: 20px;
+    font-weight: 600;
+  }
+
+  .words{
+    width: 95%;
+    height: 120px;
+    margin-left: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background: white;
+
+    .word{
+        width: 100px;
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 20px;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 10px;
+        margin-left: 10px;
+        text-align: center;
+        background: darkgrey;
+        
+
+    }
+  }
+}
+
+.apllied-container {
+  width: 500px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background: lightgrey;
+}
+.map{
+    display: flex;
+    flex-direction: column;
+}
+
+.job-list-container {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    
+}
+
+.job-item {
+    width: 90%;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    background: lightgray;
+
+    .left{
+        width: 150px;
+        height: 250px;
+        border: 2px solid black;
+        border-radius: 20px;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: white;
+
+        .title {
+            width: 100px;
+            height: 20px;
+            padding-top: 2px;
+            border: 1px solid;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .picture {
+            width: 80px;
+            height: 80px;
+            border: 1px solid;
+            border-radius: 50%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: darkgray;
+        }
+
+        .company{
+            width: 100px;
+            height: 20px;
+            padding-top: 2px;
+            border: 1px solid;
+            border-radius: 20px;
+            text-align: center;
+        }
+    }
+
+    .right{
+        width: 500px;
+        height: 250px;
+        border: 2px solid black;
+        border-radius: 20px;
+        margin: 15px;
+        text-align:start;
+
+    }
+    .right p{
+        margin: 10px;
+        font-size: 20px;
+    }
+    
+}

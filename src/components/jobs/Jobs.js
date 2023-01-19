@@ -15,7 +15,7 @@ function Jobs() {
                   <a href="">See All</a>
                 </li>
                 <li className="link">
-                  <a href="">Filter Search</a>
+                  <Link to="/search">Filter Search</Link>
                 </li>
                 <li className="link">
                   <a href="">CV builder</a>
