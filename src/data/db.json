@@ -1,0 +1,73 @@
+{
+  "quizzes": [
+    {
+      "id": 1,
+      "name": "Onboarding",
+      "description": "Alright, let's get you all set up and ready to rock your career goals! We're going to gather some info from you, so we can give you the best guidance possible. If a question doesn't feel relevant to you or you'd rather come back to it later, no worries - just skip and we'll move on. Let's do this thing!"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "required": true,
+      "prompt": "What's your name?",
+      "quizId": 1
+    },
+    {
+      "id": 2,
+      "required": true,
+      "prompt": "How can we contact you? Email, phone, or text?",
+      "isContact": true,
+      "quizId": 1
+    },
+    {
+      "id": 3,
+      "prompt": "What's your superpower?",
+      "quizId": 1
+    },
+    {
+      "prompt": "What's your main goal for using our website?",
+      "choices": ["Job applications",
+      "Finding a mentor",
+      "Posting jobs as an employer",
+      "Researching hiring companies",
+      "Professional development",
+      "Other"],
+      "quizId": 1,
+      "id": 4
+    },
+    {
+      "prompt": "Would you be interested in being a mentor for someone else?",
+      "isYesNo": true,
+      "quizId": 1,
+      "id": 5
+    },
+    {
+      "id": 6,
+      "prompt": "If you are interested in finding a mentor, what are you looking for in a mentorship?",
+      "has_NA_option": true,
+      "choices": ["Type your response", "I am not seeking a mentor"],
+      "quizId": 1
+    },
+    {
+      "id": 7,
+      "prompt": "What's the industry or field you're interested in?",
+      "quizId": 1
+    },
+    {
+      "id": 8,
+      "prompt": "What's your current job title or role?",
+      "quizId": 1
+    },
+    {
+      "id": 9,
+      "prompt": "How do you work best? (For example, do you prefer working independently or in a team?)",
+      "quizId": 1
+    },
+    {
+      "id": 10,
+      "prompt": "Describe your ideal job (role, salary, location, etc.) in a few sentences.",
+      "quizId": 1
+    }
+  ]
+}

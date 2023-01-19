@@ -36,3 +36,78 @@
     transform: rotate(360deg);
   }
 }
+
+/** ONBOARDING QUIZ-RELATED classes **/
+.questionRequired {
+  font-weight: bold;
+  color: red;
+}
+
+@font-face {
+  font-family: 'RedHatDisplay';
+  src: url("../public/redhat/fonts.0.0.1.css");
+  font-weight: 300 900;
+  font-style: italic;
+  font-display: fallback;
+}
+
+/* from Figma prototype */
+.quizSubheader {
+  position: absolute;
+  width: 120.12px;
+  height: 48px;
+  left: 175px;
+  top: 246px;
+
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  /* identical to box height */
+  text-transform: capitalize;
+
+  color: #EAEAEA;
+}
+
+.takeQuizButtonBox {
+  /* Rectangle 2 */
+  position: absolute;
+  left: 81.32%;
+  right: 7.22%;
+  top: 39.65%;
+  bottom: 5% /* 55.27% */;
+
+  background: #F2AD85;
+  border-radius: 15px;
+}
+
+.takeQuizText {
+  /* Take Quiz */
+  position: center /* absolute */;
+  /*
+  left: 84.17%;
+  right: 9.65%;
+  top: 40.62%;
+  bottom: 56.25%;
+  */
+
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  /* identical to box height, or 160% */
+  letter-spacing: -0.019em;
+
+  color: #075473;
+}
+
+.takeQuizArrow {
+  /* Arrows / right arrow */
+  position: absolute;
+  left: 90.49%;
+  right: 7.89%;
+  top: 41.02%;
+  bottom: 56.64%;
+}
