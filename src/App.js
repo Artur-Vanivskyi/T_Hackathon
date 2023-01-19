@@ -1,4 +1,3 @@
-import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Layout from "./layout/Layout";
 

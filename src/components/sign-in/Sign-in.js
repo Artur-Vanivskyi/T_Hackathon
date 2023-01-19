@@ -91,7 +91,7 @@ const defaultFormFields = {
             type='button'
             onClick={signInWithGoogle}
           >
-            Sign In With Google
+             Google
           </Button>
           </div>
         </form>

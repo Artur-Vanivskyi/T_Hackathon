@@ -17,7 +17,7 @@ function NavBar() {
       <nav className="all">
         <div className="navtop">
           <Link to="/home" className="navBrand">
-            ROBOT
+            NAME
           </Link>
         </div>
         <ul>
@@ -27,13 +27,18 @@ function NavBar() {
             </Link>
           </li>
           <li>
-            <Link to="/about" className="navlink">
-              About
+            <Link to="/onboarding" className="navlink">
+              Onboarding
             </Link>
           </li>
           <li>
-            <Link to="/search" className="navlink">
-              Search
+            <Link to="/mentorship" className="navlink">
+              Mentorship
+            </Link>
+          </li>
+          <li>
+            <Link to="/jobs" className="navlink">
+              Jobs
             </Link>
           </li>
           <li>

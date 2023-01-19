@@ -2,7 +2,7 @@
     padding: 0.8rem;
     margin: 0;
     box-sizing: border-box;
-    background-color: #1f1f38;
+    background-color:#344D67;
     border: 1px solid black;
 }
 
@@ -28,7 +28,7 @@ ul {
     font-size: 3.8rem;
     font-weight: bold;
     margin-left: 3rem;
-    color: #ffbb90;
+    color: Black;
     /* color: #344D67; */
     /* text-shadow: 0 0 5px #00dfc4,
         0 0 10px #00dfc4,
@@ -37,10 +37,10 @@ ul {
         0 0 20px #fffc; */
 }
 
-.navBrand:hover {
+/* .navBrand:hover {
     text-decoration: none;
     color: #344D67;
-}
+} */
 
 .navlink, .navtoggler {
     text-decoration: none;
@@ -50,30 +50,30 @@ ul {
     color: #fff;
     padding: 0.5rem 1rem;
     color: #fff;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 0.5rem;
-    box-shadow: 0 0 1px #00dfc4,
+    /* box-shadow: 0 0 1px #00dfc4,
         0 0 1px #00dfc4,
         0 0 1px #fff,
         0 0 1px #fff,
-        0 0 1px #fff;
+        0 0 1px #fff; */
 }
 
 .navlink:hover {
     text-decoration: none;
     /* background: #fff; */
-    color: #00fffc;
+    color: black;
     font-weight: bold;
-    box-shadow: 0 0 5px #00dfc4,
+    /* box-shadow: 0 0 5px #00dfc4,
         0 0 5px #00dfc4,
         0 0 5px #fff,
         0 0 5px #fff,
-        0 0 5px #fff;
+        0 0 5px #fff; */
 
 }
 
 
-/* ---------- MEDIA ---------- */
+/* ---------- MEDIA ----------
 
 @media screen and (max-width: 600px) {
     nav {
@@ -105,4 +105,4 @@ ul {
         font-size: 10px;
     }
 
-}
+} */
