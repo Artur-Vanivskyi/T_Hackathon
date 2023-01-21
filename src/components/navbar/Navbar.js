@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import "./navbar.css";
 import { UserContext } from "../../context/user.context";
 import { signOutUser } from "../../utils/firebase.utils";
+import {MdWorkOutline} from "react-icons/md";
+import {GrHomeRounded} from "react-icons/gr";
+import {BsPeople} from "react-icons/bs";
+import {BsChatDots} from "react-icons/bs";
+import {SlLogin} from "react-icons/sl"
+import logo from "../../assests/logo.png";
 
 function NavBar() {
   const { currentUser, setCurrentUser } = useContext(UserContext);
@@ -17,28 +23,28 @@ function NavBar() {
       <nav className="all">
         <div className="navtop">
           <Link to="/home" className="navBrand">
-            NAME
+            <img src={logo} />
           </Link>
         </div>
         <ul>
           <li>
             <Link to="/home" className="navlink">
-              Home
+              <GrHomeRounded />
             </Link>
           </li>
           <li>
             <Link to="/onboarding" className="navlink">
-              Onboarding
+              <BsChatDots />
             </Link>
           </li>
           <li>
             <Link to="/mentorship" className="navlink">
-              Mentorship
+              <BsPeople />
             </Link>
           </li>
           <li>
             <Link to="/jobs" className="navlink">
-              Jobs
+              <MdWorkOutline />
             </Link>
           </li>
           <li>
@@ -48,7 +54,7 @@ function NavBar() {
               </span>
             ) : (
               <Link to="/auth" className="navlink">
-                Sign-in
+                <SlLogin />
               </Link>
             )}
           </li>

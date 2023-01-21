@@ -10,6 +10,7 @@ import Jobs from "../components/jobs/Jobs";
 import NotFound from "./NotFound";
 import List from "../components/jobs/list/List";
 import Search from "../components/jobs/search/Search";
+import Homee from "../homee/Homee";
 
 function Routes() {
   return (
@@ -18,7 +19,7 @@ function Routes() {
         <Redirect to={"/home"} />
       </Route>
       <Route path="/home">
-        <Home />
+        <Homee />
       </Route>
       <Route path="/onboarding">
         <Onboarding />
