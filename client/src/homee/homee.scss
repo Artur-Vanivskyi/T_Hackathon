@@ -1,0 +1,106 @@
+.container-wrap-homee {
+  width: 100%;
+  height: 900px;
+  background: linear-gradient(180.02deg, #b9dbdc 4.68%, #ffffff 99.99%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  .help-container-homee {
+    position: absolute;
+    width: 644px;
+    height: 106px;
+    left: 398px;
+    top: 204px;
+
+    font-family: "Red Hat Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 150%;
+    /* or 144px */
+
+    text-align: center;
+    letter-spacing: -0.023em;
+
+    color: #333333;
+  }
+
+  .info-container-homee p {
+    position: absolute;
+    width: 426px;
+    height: 99px;
+    left: 507px;
+    top: 400px;
+
+    font-family: "Red Hat Display";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 150%;
+    /* or 36px */
+
+    text-align: center;
+    letter-spacing: -0.023em;
+
+    color: #231f20;
+  }
+
+  .button-container-homee button {
+    position: absolute;
+    width: 298px;
+    height: 95px;
+    left: 570px;
+    top: 550px;
+    background: #047f82;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+
+  .mentor-container-homee {
+    position: absolute;
+    width: 164px;
+    height: 22px;
+    left: 638px;
+    top: 714px;
+
+    font-family: "Red Hat Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+
+    text-align: center;
+    letter-spacing: -0.023em;
+    text-decoration-line: underline;
+
+    color: #075473;
+  }
+
+  .search-container-homee {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 593px;
+    height: 44px;
+    left: 423px;
+    top: 800px;
+
+    background: #fdfdfd;
+    border: 1px solid #333333;
+    border-radius: 30px;
+
+    font-family: "Red Hat Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 32px;
+    /* identical to box height, or 188% */
+
+    letter-spacing: -0.019em;
+
+    color: rgba(35, 31, 32, 0.85);
+  }
+}

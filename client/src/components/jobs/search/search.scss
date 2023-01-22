@@ -1,0 +1,247 @@
+.page-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.profile-container {
+  width: 520px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding-left: 10px;
+  margin-left: 30px;
+}
+
+.bio-container {
+  width: 500px;
+  height: 200px;
+  margin-top: 20px;
+  //   border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  background: #075473;
+}
+
+.left {
+  width: 150px;
+  height: 180px;
+
+  .image img {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    left: 60px;
+    top: 146px;
+
+    background: url(../../../assests//2.png);
+    border-radius: 14.6429px;
+  }
+
+  .name {
+    width: 100px;
+    height: 20px;
+    // border: 2px solid black;
+    position: absolute;
+    top: 235px;
+    left: 60px;
+    background: #075473;
+    color: white;
+  }
+  .position {
+    width: 100px;
+    height: 20px;
+    // border: 2px solid black;
+    position: absolute;
+    top: 265px;
+    left: 60px;
+    background: #075473;
+    color: white;
+  }
+}
+
+.right-bio {
+  width: 340px;
+  height: 150px;
+  // border: 2px solid black;
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  background: #f2f2f2;
+
+  .bio-text {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0px 0px 10px;
+    inline-size: 320px;
+    overflow-wrap: break-word;
+  }
+}
+
+.keywords-container {
+  width: 500px;
+  height: 200px;
+  //   border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  background: #075473;
+
+  .key-text {
+    margin: 20px;
+    font-weight: 600;
+    color: white;
+  }
+
+  .words {
+    width: 95%;
+    height: 120px;
+    margin-left: 10px;
+    // border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background: #075473;
+
+    .word {
+      width: 100px;
+      height: 30px;
+      // border: 2px solid black;
+      border-radius: 20px;
+      font-size: 20px;
+      font-family: "Times New Roman", Times, serif;
+      margin-top: 10px;
+      margin-left: 10px;
+      text-align: center;
+      background: #f2ad85;
+    }
+  }
+}
+
+.apllied-container {
+  width: 500px;
+  height: 200px;
+  //   border: 2px solid black;
+  border-radius: 20px;
+  background: #075473;
+
+  .key-text {
+    margin: 20px;
+    font-weight: 600;
+    color: white;
+  }
+
+  img {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    left: 65px;
+    top: 610px;
+
+    background: url(../../../assests/3.png);
+    border-radius: 14.6429px;
+  }
+
+  p {
+    position: absolute;
+    width: 72px;
+    height: 59px;
+    left: 72px;
+    top: 700px;
+
+    font-family: "Red Hat Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 200% */
+
+    text-align: center;
+    text-decoration-line: none;
+
+    color: white;
+  }
+}
+.map {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-list-container {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.job-item {
+  width: 90%;
+  height: 300px;
+  // border: 2px solid black;
+  border-radius: 20px;
+  margin-top: 20px;
+  display: flex;
+  background: #f2f2f2;
+
+  .left {
+    width: 150px;
+    height: 250px;
+    // border: 2px solid black;
+    border-radius: 20px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+
+    .title {
+      width: 100px;
+      height: 20px;
+      padding-top: 2px;
+      border: 1px solid;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .picture {
+      width: 80px;
+      height: 80px;
+      border: 1px solid;
+      border-radius: 50%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: darkgray;
+    }
+
+    .company {
+      width: 100px;
+      height: 20px;
+      padding-top: 2px;
+      border: 1px solid;
+      border-radius: 20px;
+      text-align: center;
+    }
+  }
+
+  .right {
+    width: 500px;
+    height: 250px;
+    // border: 2px solid black;
+    border-radius: 20px;
+    margin: 15px;
+    text-align: start;
+    background: white;
+  }
+  .right p {
+    margin: 10px;
+    font-size: 20px;
+  }
+}
