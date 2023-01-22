@@ -4,6 +4,7 @@ UI to view the "metadata" of a quiz
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import truncateText from "../utils/truncateText";
+import "../../../App.css";
 
 export const Quiz = ({ quizObj }) => {
   const history = useHistory();

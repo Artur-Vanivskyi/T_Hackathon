@@ -1,15 +1,19 @@
 import React, { useState } from "react";
-import { useRouteMatch, NavLink } from "react-router-dom";
+import { /* useRouteMatch, */ NavLink } from "react-router-dom";
+import quizData from "../../../data/db.json";
 import { getQuiz, getQuestions } from "../utils/staticdata/index";
 import Answer from "./Answer";
-const ROUTE = "take";
+// const ROUTE = "take";
 
 export const Take = () => {
-    const { url } = useRouteMatch();
-    const quizId = parseInt(url.substring(url.indexOf(ROUTE) + ROUTE.length + 1));
+    const ONBOARDING_QUIZ_ELEM = quizData['quizzes'].filter(
+        x => x['name'].toLowerCase() === 'onboarding');
+    const ONBOARDING_QUIZ_ID = ONBOARDING_QUIZ_ELEM[0]['id'];
+    // const { url } = useRouteMatch();
+    // const quizId = parseInt(url.substring(url.indexOf(ROUTE) + ROUTE.length + 1));
 
-    const thisQuiz = getQuiz(quizId);
-    const questionList = getQuestions(quizId);
+    const thisQuiz = getQuiz(ONBOARDING_QUIZ_ID);
+    const questionList = getQuestions(ONBOARDING_QUIZ_ID);
     const [num, setNum] = useState(1);
     // const [userAnswers, setUserAnswers] = useState([]);
     return(

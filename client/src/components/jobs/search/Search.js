@@ -1,6 +1,6 @@
 import "./search.scss";
-import pic from "../../../assests/2.png";
-import apple from "../../../assests/3.png";
+import pic from "../../../assets/2.png";
+import apple from "../../../assets/3.png";
 import React from "react";
 
 const keyWords = [

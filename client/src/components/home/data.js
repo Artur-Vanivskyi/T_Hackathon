@@ -1,4 +1,4 @@
-import test from "../../assests/test.png";
+import test from "../../assets/test.png";
 
 export const data = [
   {

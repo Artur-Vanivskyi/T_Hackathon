@@ -1,5 +1,5 @@
 import React from "react";
-import construction from "../../assests/5.png";
+import construction from "../../assets/5.png";
 
 import "./mentorship.scss";
 

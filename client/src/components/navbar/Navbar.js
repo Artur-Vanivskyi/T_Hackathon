@@ -8,7 +8,7 @@ import {GrHomeRounded} from "react-icons/gr";
 import {BsPeople} from "react-icons/bs";
 import {BsChatDots} from "react-icons/bs";
 import {SlLogin} from "react-icons/sl"
-import logo from "../../assests/logo.png";
+import logo from "../../assets/logo.png";
 
 function NavBar() {
   const { currentUser, setCurrentUser } = useContext(UserContext);

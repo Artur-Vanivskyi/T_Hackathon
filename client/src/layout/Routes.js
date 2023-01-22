@@ -2,7 +2,6 @@ import React from "react";
 import { Redirect, Switch, Route } from "react-router-dom";
 //import About from "../components/about/About";
 import Home from "../components/home/Home";
-import Onboarding from "../components/onboarding/Onboarding";
 //import Search from "../components/search/Search";
 import Mentorship from "../components/mentorship/Mentorship";
 import Authentication from "./authentication/Authentication";
@@ -25,9 +24,6 @@ function Routes() {
       <Route path="/home">
         <Homee />
       </Route>
-      <Route path="/onboarding">
-        <Onboarding />
-      </Route>
       <Route path="/mentorship">
         <Mentorship />
       </Route>
@@ -44,9 +40,10 @@ function Routes() {
       <Route exact={true} path="/quizzes/:quizId"> {/* pathing OK */ }
         <QuizView/>
       </Route>
-      <Route path="/take/:quizId">
+      <Route path="/onboarding" /* "/take/:quizId" */>
         <Take/>
       </Route>
+      {/* end quiz paths */}
       <Route path="/opp">
         <List />
       </Route>
