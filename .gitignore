@@ -17,7 +17,6 @@ coverage/
 build/
 
 # misc
-.eslintcache
 .DS_Store
 .env
 .env.*
