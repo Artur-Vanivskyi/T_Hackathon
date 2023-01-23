@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import ProgressNav from "./ProgressNav";
+import "./progress_nav_bar.css";
 
-/* TODO: separate progress bar in client/src/components/ folder */
-function Answer({/*quizName, */ idState, questionList, userAnswers}) {
+function Answer({idState, questionList, userAnswers}) {
     const history = useHistory();
     const {num, setNum} = idState;
     const [fixedAnswer, setFixedAnswer] = useState(undefined);
@@ -103,6 +104,7 @@ function Answer({/*quizName, */ idState, questionList, userAnswers}) {
     return (
         <div>
             <div className="border p-4 h-100 d-flex flex-column">
+                <ProgressNav numQuestions={questionList.length} viewingQuestion={num}/>
                 <h3 className={getIsRequired(num) ? "questionRequired" : ""}>
                     {`Question ${num} of ${questionList.length}${
                         getIsRequired(num) ? " (REQUIRED)" : ""}`}
@@ -133,9 +135,17 @@ function Answer({/*quizName, */ idState, questionList, userAnswers}) {
                         </button>
                         {/* next / submit */}
                         { (num < questionList.length) ? (
-                            <button onClick={handleNext}>Next</button>
+                            <button
+                                onClick={handleNext}
+                                className="genericDarkNavy">
+                                    Next
+                            </button>
                         ) : (
-                            <button onClick={handleSubmit}>Finish</button>
+                            <button
+                                onClick={handleSubmit}
+                                className="genericDarkNavy">
+                                    Finish
+                            </button>
                         )}
                     </li>
                 </ul>

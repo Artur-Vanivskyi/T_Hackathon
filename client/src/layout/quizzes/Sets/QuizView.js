@@ -1,13 +1,13 @@
 import React/*, { useEffect, useState }*/ from "react";
-import { useHistory, useParams, useRouteMatch } from "react-router-dom";
+import { useHistory, useParams/*, useRouteMatch */} from "react-router-dom";
 import { getQuiz, getQuestions } from "../utils/staticdata/index";
 import QuestionCard from "./QuestionCard";
 import QuizViewHome from "./QuizViewHome";
 
 export const QuizView = () => {
     const history = useHistory();
-    const { url } = useRouteMatch();
-    const QUIZ_VIEW_URL = url.substring(url.indexOf("quizzes") - 1);
+    // const { url } = useRouteMatch();
+    // const QUIZ_VIEW_URL = url.substring(url.indexOf("quizzes") - 1);
     
     const params = useParams();
     const quizId = parseInt(params['quizId']);
@@ -18,7 +18,7 @@ export const QuizView = () => {
         <QuestionCard key={questionObj['id']}
             questionObj={questionObj}
             browserHistory={history}
-            quizViewUrl={QUIZ_VIEW_URL}/>);
+            quizViewUrl={`/onboarding/${questionObj['id']}`}/>);
     return (
         /* col-12 col-md-6 col-xl-3 my-2 */
         <article className="align-self-stretch">

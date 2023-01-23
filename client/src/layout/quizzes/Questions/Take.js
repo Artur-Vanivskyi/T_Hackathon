@@ -1,20 +1,22 @@
 import React, { useState } from "react";
-import { /* useRouteMatch, */ NavLink } from "react-router-dom";
+import { useParams, NavLink } from "react-router-dom";
 import quizData from "../../../data/db.json";
 import { getQuiz, getQuestions } from "../utils/staticdata/index";
 import Answer from "./Answer";
-// const ROUTE = "take";
 
+/* default is to start from question 1 (see [num, setNum] definition),
+e.g. clicking on Quiz from home page */
 export const Take = () => {
     const ONBOARDING_QUIZ_ELEM = quizData['quizzes'].filter(
         x => x['name'].toLowerCase() === 'onboarding');
     const ONBOARDING_QUIZ_ID = ONBOARDING_QUIZ_ELEM[0]['id'];
-    // const { url } = useRouteMatch();
-    // const quizId = parseInt(url.substring(url.indexOf(ROUTE) + ROUTE.length + 1));
+    
+    const params = useParams();
+    const QUESTION_ID = ('questionId' in params) ? parseInt(params['questionId']) : 1;
 
     const thisQuiz = getQuiz(ONBOARDING_QUIZ_ID);
     const questionList = getQuestions(ONBOARDING_QUIZ_ID);
-    const [num, setNum] = useState(1);
+    const [num, setNum] = useState(QUESTION_ID);
     // const [userAnswers, setUserAnswers] = useState([]);
     return(
         <div>

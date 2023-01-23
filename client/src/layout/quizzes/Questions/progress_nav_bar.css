@@ -1,0 +1,63 @@
+/* secondary header */
+.progressNav {
+  background: #075473;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 8px;
+}
+
+.genericDarkNavy {
+  background: #075473;
+  color: #EAEAEA; /* why can't this be called "text-color"? */
+}
+
+.progressBarLayout {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 8px;
+  justify-content: center;
+  /* the below is not flexible enough */
+  /*
+  position: absolute;
+  width: 262px;
+  height: 19px;
+  left: 178px;
+  top: 315px;
+  */
+}
+  
+.questionBlankRectangle {
+  box-sizing: border-box;
+
+  width: 19px;
+  height: 19px;
+
+  background: #EAEAEA;
+  border: 0.25px solid #EAEAEA;
+
+  /* Inside auto layout */
+  flex: none;
+  /* order: 0; */ /* programmatically set */
+  flex-grow: 0;
+}
+
+.questionViewedRectangle {
+  box-sizing: border-box;
+
+  width: 19px;
+  height: 19px;
+
+  background: #F2AD85;
+  fill: #F2AD85;
+  border: 3px solid #F2AD85;
+
+  /* Inside auto layout */
+  flex: none;
+  /* order: 0; */ /* programmatically set */
+  flex-grow: 0;
+}

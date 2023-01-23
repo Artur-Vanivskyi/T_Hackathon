@@ -4,12 +4,12 @@ class for displaying question previews in quiz homepages (cannot view answer cho
 import React from "react";
 import truncateText from "../utils/truncateText";
 
-export const QuestionCard = ({ questionObj, browserHistory/*, quizViewUrl*/}) => {
+export const QuestionCard = ({ questionObj, browserHistory, quizViewUrl}) => {
   const isRequired = 'required' in questionObj && questionObj['required'];
   let prompt = `Q${questionObj['id']}. ${truncateText(questionObj['prompt'])}`;
   const handleNext = (event) => {
     event.preventDefault();
-    browserHistory.push(`/take/:quizId`);
+    browserHistory.push(quizViewUrl);
   }
 
   return (

@@ -37,10 +37,13 @@ function Routes() {
       <Route exact={true} path="/quizzes/">
         <QuizList/>
       </Route>
-      <Route exact={true} path="/quizzes/:quizId"> {/* pathing OK */ }
+      <Route path="/quizzes/:quizId"> {/* pathing OK */ }
         <QuizView/>
       </Route>
-      <Route path="/onboarding" /* "/take/:quizId" */>
+      <Route exact={true} path="/onboarding" /* "/take/:quizId" */>
+        <Take/>
+      </Route>
+      <Route path="/onboarding/:questionId" /* "/take/:quizId" */>
         <Take/>
       </Route>
       {/* end quiz paths */}

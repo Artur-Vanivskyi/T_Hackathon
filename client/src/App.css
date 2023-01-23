@@ -43,6 +43,7 @@
   color: red;
 }
 
+/*
 @font-face {
   font-family: 'RedHatDisplay';
   src: url("../public/redhat/fonts.0.0.1.css");
@@ -50,6 +51,7 @@
   font-style: italic;
   font-display: fallback;
 }
+*/
 
 /* from Figma prototype */
 .quizSubheader {
